@@ -1,0 +1,8 @@
+{
+  "name": "Premium muslim wedding Client 1",
+  "description": "A premium, elegant, mobile-first Wedding Invitation E-Card Website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
