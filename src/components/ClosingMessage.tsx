@@ -34,7 +34,7 @@ export function ClosingMessage({ data }: ClosingMessageProps) {
           A &amp; S
         </h3>
         <p className="font-serif text-xs text-[#78132B] font-bold mt-1 tracking-widest uppercase">
-          Walima / Reception
+          Valima / Reception
         </p>
       </motion.div>
 

@@ -12,12 +12,12 @@ export function InvitationMessage({ message, data, isHeroEnded }: InvitationMess
   const quranicTranslation = data?.quranicVerse?.translation || "And We created you in pairs";
   const rawCustomText = data?.customText || "";
   const customText = (!rawCustomText || rawCustomText === "(JM)" || rawCustomText.includes("JM")) ? "A & S" : rawCustomText;
-  const invitationMsg = message || data?.invitationMessage || "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ\nMay Allah bless this union with love, barakah, and happiness.\nWe cordially invite you and your family to grace the auspicious occasion of the Walima / Reception dinner from the Groom's side.";
+  const invitationMsg = message || data?.invitationMessage || "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ\nMay Allah bless this union with love, barakah, and happiness.\nWe cordially invite you and your family to grace the auspicious occasion of the Valima / Reception dinner from the Groom's side.";
 
   // Separate Arabic and English in invitation message if newline separated
   const lines = invitationMsg.split("\n");
   const arabicLine = lines[0] || "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ";
-  const englishLine = lines.slice(1).join("\n") || "May Allah bless this union with love, barakah, and happiness.\nWe cordially invite you to celebrate the Walima / Reception dinner from the Groom's side.";
+  const englishLine = lines.slice(1).join("\n") || "May Allah bless this union with love, barakah, and happiness.\nWe cordially invite you to celebrate the Valima / Reception dinner from the Groom's side.";
 
   return (
     <section className="relative px-6 pt-28 pb-20 bg-[#FCF5F6] flex flex-col items-center text-center">
@@ -76,7 +76,7 @@ export function InvitationMessage({ message, data, isHeroEnded }: InvitationMess
                 {customText}
               </span>
               <span className="text-[10px] uppercase font-serif tracking-[0.3em] text-[#8F1736]/70 mt-1 font-semibold">
-                Walima • Reception
+                Valima • Reception
               </span>
             </div>
           )}

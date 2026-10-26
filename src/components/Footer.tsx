@@ -13,7 +13,7 @@ export function Footer({ data }: FooterProps) {
         A &amp; S
       </h4>
       <p className="font-serif text-xs text-[#78132B] font-semibold mb-3 tracking-wider">
-        Walima / Reception • Nizamabad
+        Valima / Reception • Nizamabad
       </p>
       
       <div className="flex items-center gap-2 opacity-60 mb-8">

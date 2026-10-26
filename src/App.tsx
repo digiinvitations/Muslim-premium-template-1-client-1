@@ -127,7 +127,7 @@ function PublicView() {
             )}
             <span className="h-3.5 w-px bg-pink-border" />
             <span className="text-[10px] text-wine-dark/85 font-serif font-bold uppercase tracking-wider">
-              Walima / Reception
+              Valima / Reception
             </span>
           </div>
         </div>

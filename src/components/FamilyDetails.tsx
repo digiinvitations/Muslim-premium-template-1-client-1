@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Users, Heart, User, Sparkles } from "lucide-react";
+import { Users, User, Sparkles } from "lucide-react";
 import { WeddingData } from "../types";
 import { HeartDivider } from "./HeartDivider";
 
@@ -10,11 +10,6 @@ interface FamilyDetailsProps {
 export function FamilyDetails({ data }: FamilyDetailsProps) {
   const family = data.familyDetails;
   if (!family) return null;
-
-  // 3 Rich Dark Text Colors:
-  // Color 1: #5A0C1E (Dark Velvet Burgundy) - Person names & Section titles
-  // Color 2: #2A161C (Dark Charcoal Espresso) - Role descriptions & systematic text
-  // Color 3: #78132B (Dark Crimson Plum) - Badges, numbers, qualifications & relation tags
 
   return (
     <section className="py-16 px-4 sm:px-5 bg-blush-main flex flex-col items-center overflow-hidden">
@@ -32,7 +27,7 @@ export function FamilyDetails({ data }: FamilyDetailsProps) {
         </h2>
         
         <p className="font-serif italic text-xs text-[#2A161C] mt-1 font-semibold">
-          With the love, prayers &amp; blessings of our families
+          With the love, prayers &amp; blessings of Ansari' Family Reception
         </p>
 
         <HeartDivider />
@@ -85,7 +80,7 @@ export function FamilyDetails({ data }: FamilyDetailsProps) {
           </motion.div>
 
           {/* ======================================================== */}
-          {/* 2. BRIDE'S FAMILY (ONLY FATHER'S NAME AS SPECIFIED)       */}
+          {/* 2. BRIDE'S FAMILY / REFERENCE SECTION                     */}
           {/* ======================================================== */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -100,7 +95,7 @@ export function FamilyDetails({ data }: FamilyDetailsProps) {
             {/* Systematic Header */}
             <div className="flex items-center justify-between mb-4 pb-2 border-b border-pink-border/50">
               <span className="font-sans text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full bg-[#FCEBED] text-[#5A0C1E] border border-[#E8C7CD]">
-                Bride's Side
+                Bride's Side Reference
               </span>
               <span className="font-serif text-xs font-bold uppercase tracking-wider text-[#78132B] flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-[#78132B]" />
@@ -108,22 +103,22 @@ export function FamilyDetails({ data }: FamilyDetailsProps) {
               </span>
             </div>
 
-            {/* Systematic Bride's Father Section Only */}
+            {/* Systematic Reference Section */}
             <div>
               <h4 className="text-[10px] font-sans uppercase font-bold tracking-[0.18em] text-[#2A161C] mb-2.5 flex items-center gap-1.5">
                 <User className="w-3.5 h-3.5 text-[#78132B]" />
-                Father's Name
+                Reference Details
               </h4>
               
               <div className="bg-[#FAF0F3] p-4 rounded-xl border border-pink-border/60">
                 <span className="text-[10px] font-sans uppercase font-bold tracking-wider text-[#78132B] block mb-1">
-                  Father
+                  Designation / Institution
                 </span>
                 <p className="font-serif font-bold text-base sm:text-lg text-[#5A0C1E] leading-snug">
-                  Syed Majid ali sahab
+                  Sr. Asst. GG college, Nizamabad
                 </p>
                 <p className="text-xs text-[#78132B] font-semibold mt-1">
-                  Daughter of Syed Majid ali sahab
+                  Ansari' Family Reception
                 </p>
               </div>
             </div>

@@ -152,7 +152,7 @@ export function Timeline({ events = [], venue, data }: TimelineProps) {
   // Build systematic milestones
   let milestones: MilestoneItem[] = [];
 
-  // If only 1 general event (or no events), generate the 3 systematic Islamic Walima / Reception milestones
+  // If only 1 general event (or no events), generate the 3 systematic Islamic Valima / Reception milestones
   if (events.length <= 1) {
     milestones = [
       {
@@ -170,12 +170,12 @@ export function Timeline({ events = [], venue, data }: TimelineProps) {
       {
         id: "m2",
         stepNumber: "02",
-        category: "Auspicious Feast • Dawat-e-Walima",
-        title: "Grand Walima Dinner Feast",
+        category: "Auspicious Feast • Dawat-e-Valima",
+        title: "Grand Valima Dinner Feast",
         time: "9:30 PM Onwards",
         date: `${defaultDay}, ${defaultDate}`,
         location: `${defaultVenueName} (Main Dining Area)`,
-        description: "Sumptuous and traditional Walima dinner feast serving celebratory royal delicacies in honor of our esteemed guests.",
+        description: "Sumptuous and traditional Valima dinner feast serving celebratory royal delicacies in honor of our esteemed guests.",
         mapUrl: defaultMapUrl,
         iconType: "dinner"
       },
@@ -200,7 +200,7 @@ export function Timeline({ events = [], venue, data }: TimelineProps) {
       const lowerTitle = (ev.title || "").toLowerCase();
       if (lowerTitle.includes("arrival") || lowerTitle.includes("welcome") || lowerTitle.includes("gathering")) {
         iconType = "arrival";
-      } else if (lowerTitle.includes("dinner") || lowerTitle.includes("feast") || lowerTitle.includes("walima") || lowerTitle.includes("lunch")) {
+      } else if (lowerTitle.includes("dinner") || lowerTitle.includes("feast") || lowerTitle.includes("valima") || lowerTitle.includes("lunch")) {
         iconType = "dinner";
       } else if (lowerTitle.includes("dua") || lowerTitle.includes("blessing") || lowerTitle.includes("meet") || lowerTitle.includes("nikah")) {
         iconType = "blessings";
@@ -259,7 +259,7 @@ export function Timeline({ events = [], venue, data }: TimelineProps) {
           Program Timeline
         </h2>
         <p className="font-serif text-xs text-[#5A0C1E]/75 tracking-wider uppercase mt-1 mb-2">
-          Walima / Reception Ceremony Milestones
+          Valima / Reception Ceremony Milestones
         </p>
         
         <HeartDivider />
@@ -434,7 +434,7 @@ export function Timeline({ events = [], venue, data }: TimelineProps) {
             </div>
             <div>
               <h4 className="font-serif font-bold text-xs sm:text-sm text-[#5A0C1E]">
-                Walima / Reception Gathering from Groom's Side
+                Valima / Reception Gathering from Groom's Side
               </h4>
               <p className="font-serif text-[11px] text-[#5A0C1E]/75">
                 Sunday, 15 Nov 2026 • AN garden function hall, Nizamabad
