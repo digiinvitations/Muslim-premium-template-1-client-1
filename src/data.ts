@@ -20,7 +20,7 @@ export const weddingData: WeddingData = {
   openingThumbnailUrl: "https://i.ibb.co/QFc6pvCg/file-0000000069488211b334f24889ba09e4.png",
   openingVideoUrl: "https://www.image2url.com/r2/default/videos/1788010850590-27bb3d4c-eb70-4e57-8299-6bca19925158.mp4",
   heroVideoUrl: "https://www.image2url.com/r2/default/videos/1788011182513-3d74480d-c3ef-41df-926f-d21988765de3.mp4",
-  ogImageUrl: "https://cdn.phototourl.com/member/2026-10-25-f55cd595-512c-4f00-8169-989325417c9b.png",
+  ogImageUrl: "https://cdn.phototourl.com/member/2026-10-26-ea17eb01-4cf0-4d20-8e62-5f9f461d3b09.png",
   heroMessage: "In the name of Allah, Most Gracious, Most Merciful\nAnsari' Family Reception\nWe cordially invite you to celebrate the Valima ceremony of",
   customText: "A & S",
   jmLogoUrl: "",
