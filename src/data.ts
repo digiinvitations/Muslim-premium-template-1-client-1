@@ -9,7 +9,7 @@ export const weddingData: WeddingData = {
   },
   bride: {
     name: "Sr. Asst. GG college, Nizamabad",
-    parents: "Sr. Asst. GG college, Nizamabad",
+    parents: "Daughter of Syed Majid ali sahab",
     profession: "",
     education: ""
   },
@@ -32,12 +32,14 @@ export const weddingData: WeddingData = {
   invitationMessage: "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ\nMay Allah bless this union with love, barakah, and happiness.\nWe cordially invite you and your family to grace the auspicious occasion of Ansari' Family Reception (Valima) from the Groom's side.",
   familyDetails: {
     brideSide: {
-      father: "Sr. Asst. GG college, Nizamabad",
-      mother: ""
+      father: "Syed Majid ali sahab",
+      mother: "Sr. Asst. GG college, Nizamabad",
+      sisters: []
     },
     groomSide: {
       father: "Late Mohammed Shakeel uddin Ansari",
-      mother: "Mrs. Mohammed Shakeel uddin Ansari"
+      mother: "",
+      brothers: []
     }
   },
   events: [

@@ -146,13 +146,9 @@ export function getEnvironmentDocId(): string {
       return CLIENT_1_SLOT_ID;
     }
 
-    // External Hosting Detection:
-    if (hostname.endsWith(".vercel.app") || hostname.endsWith(".web.app") || hostname.endsWith(".netlify.app")) {
-      const cleanSlug = hostname.replace(/[^a-zA-Z0-9_-]/g, "_").toLowerCase();
-      if (cleanSlug.includes("oct_nov") || cleanSlug.includes("client")) {
-        return CLIENT_1_SLOT_ID;
-      }
-      return `wedding_data_${cleanSlug}`;
+    // External Hosting Detection: Always default to CLIENT_1_SLOT_ID across all hosting
+    if (hostname.endsWith(".vercel.app") || hostname.endsWith(".web.app") || hostname.endsWith(".netlify.app") || hostname.includes("vercel") || hostname.includes("netlify")) {
+      return CLIENT_1_SLOT_ID;
     }
   } catch (e) {}
 

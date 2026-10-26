@@ -97,7 +97,7 @@ export function Hero({ data, shouldPlayVideo = true, onVideoEnd }: HeroProps) {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: showText ? 1 : 0, scale: showText ? 1 : 0.95 }}
             transition={{ duration: 1.5, delay: 0.5 }}
-            className="flex flex-col items-center justify-center w-full bg-white/70 backdrop-blur-xs p-6 rounded-3xl border border-pink-border/60 shadow-lg my-2"
+            className="flex flex-col items-center justify-center w-full bg-white/75 backdrop-blur-xs p-6 rounded-3xl border border-pink-border/60 shadow-lg my-2"
           >
             {/* Monogram Initials Badge */}
             <div className="mb-3 px-5 py-1.5 rounded-full border border-pink-border bg-white shadow-2xs text-[#78132B] font-serif font-extrabold text-sm sm:text-base tracking-[0.3em] flex items-center gap-2">
@@ -106,13 +106,13 @@ export function Hero({ data, shouldPlayVideo = true, onVideoEnd }: HeroProps) {
               <Sparkles className="w-3.5 h-3.5 text-[#8F1736]" />
             </div>
 
-            {/* Groom Name with refined serif & calligraphy styling */}
-            <h1 className="font-names text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-wide text-[#5A0C1E] drop-shadow-[0_2px_12px_rgba(255,255,255,0.95)] leading-tight text-center">
+            {/* Groom Name with Berkshire Swash font */}
+            <h1 className="font-[family-name:var(--font-berkshire)] text-4xl sm:text-5xl md:text-6xl font-normal tracking-wide text-[#5A0C1E] drop-shadow-[0_2px_12px_rgba(255,255,255,0.95)] leading-tight text-center py-1">
               {data.groom.name}
             </h1>
             
             {/* Groom Details */}
-            <div className="font-serif text-[12px] sm:text-[13px] text-[#2A161C] flex flex-col items-center gap-1 mt-2 mb-3 font-semibold drop-shadow-[0_1px_6px_rgba(255,255,255,0.9)]">
+            <div className="font-serif text-[12px] sm:text-[13px] text-[#2A161C] flex flex-col items-center gap-1 mt-1 mb-2 font-semibold drop-shadow-[0_1px_6px_rgba(255,255,255,0.9)]">
               <p className="italic">{data.groom.parents}</p>
               <p className="font-bold text-[#78132B]">{data.groom.education}</p>
             </div>
@@ -123,14 +123,16 @@ export function Hero({ data, shouldPlayVideo = true, onVideoEnd }: HeroProps) {
               <div className="h-[1px] w-8 bg-[#8F1736]/30"></div>
             </div>
             
-            {/* Bride Details: Sr. Asst. GG college, Nizamabad with refined typography */}
-            <div className="font-serif flex flex-col items-center gap-1 mt-2 font-semibold text-center">
-              <span className="text-[10px] uppercase tracking-[0.25em] text-[#8F1736] font-bold">
-                Bride's Family Reference
-              </span>
-              <p className="font-names font-extrabold text-2xl sm:text-3xl text-[#5A0C1E] tracking-wide mt-0.5 text-center">
-                Sr. Asst. GG college, Nizamabad
+            {/* Bride Details with Berkshire Swash font */}
+            <div className="font-serif flex flex-col items-center gap-1 mt-1 font-semibold text-center">
+              <p className="font-[family-name:var(--font-berkshire)] text-4xl sm:text-5xl md:text-6xl font-normal text-[#5A0C1E] tracking-wide mt-1 text-center py-1">
+                {data.bride.name}
               </p>
+              {data.bride.parents && (
+                <p className="text-xs sm:text-[13px] text-[#78132B] font-semibold mt-1">
+                  {data.bride.parents}
+                </p>
+              )}
             </div>
           </motion.div>
         </div>

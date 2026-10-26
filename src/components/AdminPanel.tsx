@@ -1174,7 +1174,7 @@ export function AdminPanel() {
                     onChange={(v) => handleChange("familyDetails.brideSide.father", v)} 
                   />
                   <Input 
-                    label="Mother's Name" 
+                    label="Additional Reference / Subtitle (No 'Mother' label)" 
                     value={data.familyDetails?.brideSide.mother || ""} 
                     onChange={(v) => handleChange("familyDetails.brideSide.mother", v)} 
                   />
